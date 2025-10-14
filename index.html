@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Palais</title>
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Le Palais</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Branch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Order / Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <section class="container mt-4">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 shadow-sm">
+          <div class="carousel-item active">
+            <img
+              src="../Project1/images/pexels-adrien-olichon-1257089-3534750.jpg"
+              class="d-block w-100"
+              alt="rest"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Savor The Elegance</h3>
+              <p>Fine dining.Redefined</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../Project1/images/dish.webp"
+              class="d-block w-100"
+              alt="sateak"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Where luxury meets flavor </h3>
+              <p>An experience beyond taste</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../Project1/images/steak.jpg"
+              class="d-block w-100"
+              alt="cozy"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>For those who savor perfection</h3>
+              <p>The art of fine dining</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT + VIDEO -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2>About Le Palais</h2>
+          <p>
+            At Le Palais, every dish is crafted with precision, passion, and the finest ingredients from around the world. Our curated menu blends classic techniques with modern flavors, offering a feast that delights both the palate and the soul.
+          </p>
+
+          <ul class="list-group mb-3">
+            <li class="list-group-item">Fine Dining Experience</li>
+            <li class="list-group-item">Private & Exclusive Events</li>
+            <li class="list-group-item">Chef's Signature Tasting Menu</li>
+          </ul>
+
+          <!-- Collapse for more details -->
+          <p>
+            <a
+              class="btn btn-outline-primary"
+              data-bs-toggle="collapse"
+              href="#moreAbout"
+              role="button"
+              >More about us</a
+            >
+          </p>
+          <div class="collapse" id="moreAbout">
+            <div class="card card-body">
+              Our cuisine blends classic culinary traditions with modern innovation, using only the finest seasonal ingredients sourced from trusted farms and artisans
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Embedded video -->
+          <div class="ratio ratio-16x9 rounded-3 shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rI8FOLA-9XM?si=QPVMTkA-eN2u8Bjz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="container mb-5">
+      <h3 class="mb-3">Gallery</h3>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="../Project1/images/wine.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Filet Mignon with Red Wine Reduction</h5>
+
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('Island Paradise', 120)"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="../Project1/images/salmon-1.png"
+              class="card-img-top"
+              alt="salmon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smoked Salmon Pasta with Crispy Capers</h5>
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('City Lights', 80)"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="../Project1/images/creme.jpg"
+              class="card-img-top"
+              alt="creme"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Creme Brulee</h5>
+            
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('Highland Trek', 100)"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST + CTA -->
+    <section class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Top Reasons for Fine Dining</h4>
+          <ol>
+            <li>Exceptional Food Quality</li>
+            <li>Ambiance & Atmosphere</li>
+            <li>Impeccable Service</li>
+          </ol>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="packages.html" class="btn btn-lg btn-success"
+            >See Menu</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING MODAL (used by various buttons) -->
+    <div class="modal fade" id="bookModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form
+          id="modalBookingForm"
+          class="modal-content"
+          onsubmit="handleModalBooking(event)"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title">Quick Order</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+            <div class="modal-body">
+            <input type="hidden" id="modalPackageName" />
+            <div class="mb-2">
+              <label class="form-label">menu</label>
+              <input
+                type="text"
+                id="modalPackage"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Price (USD)</label>
+              <input
+                type="number"
+                id="modalPrice"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Total</label>
+              <input
+                type="text"
+                id="modalTotal"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="modalEmail"
+                required
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button class="btn btn-primary" type="submit">
+              Confirm Order
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div>© <span id="year"></span>Le Palais-Dine With Elegance</div>
+        <div>
+          <a href="#" class="text-light me-3">Privacy</a>
+          <a href="#" class="text-light">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
